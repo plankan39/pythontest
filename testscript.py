@@ -5,7 +5,7 @@ print(a)
 
 
 if not(a > 4):
-    print(a)
+    print(a+1)
 
 nmbrs = [randint(1, 101), randint(1, 101), randint(1, 101),
          randint(1, 101), randint(1, 101), randint(1, 101)]
