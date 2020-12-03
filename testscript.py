@@ -1,14 +1,27 @@
-from random import seed
-from random import randint
-a = float(1)
-print(a)
+class Mammal:
+    def __init__(self, name):
+        self.name = name
+        self.steps_taken = 0
+
+    def walk(self):
+        self.steps_taken += 1
+        return self.steps_taken
 
 
-if not(a > 4):
-    print(a+1)
+class Dog(Mammal):
+    def __init__(self, name):
+        super().__init__(name)
 
-nmbrs = [randint(1, 101), randint(1, 101), randint(1, 101),
-         randint(1, 101), randint(1, 101), randint(1, 101)]
+    def bark(self):
+        print("Voff!!")
 
-for x in nmbrs:
-    print(x)
+
+bob = Dog("bob")
+
+for x in range(10):
+    for y in range(10):
+        bob.walk()
+    bob.bark()
+print(bob.steps_taken)
+
+
