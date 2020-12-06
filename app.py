@@ -1,4 +1,5 @@
-from utils import find_max
+import utils
+
 from ecommerce.shipping import calc_shipping
 import random
 
