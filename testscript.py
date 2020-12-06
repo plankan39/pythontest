@@ -16,6 +16,10 @@ class Dog(Mammal):
     def bark(self):
         print("Voff!!")
 
+    @staticmethod
+    def hello():
+        print("sniffing you ass")
+
 
 bob = Dog("bob", 2)
 
@@ -27,3 +31,9 @@ for x in range(10):
     bob.bark()
 print(bob.steps_taken)
 bob.bark()
+
+print("test")
+Dog.hello()
+
+grades = map(int, '90, 40, 10'.split(', '))
+print(list(grades))
