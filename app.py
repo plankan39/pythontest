@@ -10,4 +10,5 @@ class Dice:
 
 
 dice = Dice()
-print(dice.roll())
+for i in range(5):
+    print(dice.roll())
