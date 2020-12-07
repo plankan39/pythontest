@@ -15,7 +15,7 @@ def process_workbook(filename):
     chart = BarChart()
     chart.add_data(values)
     sheet.add_chart(chart, 'e2')
-    wb.save(filename[:-5] + '2' + filename[-5:])
+    wb.save(filename[:-5] + '_processed' + filename[-5:])
 
 
 process_workbook("transactions.xlsx")
