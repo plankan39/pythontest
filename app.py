@@ -12,3 +12,5 @@ class Dice:
 dice = Dice()
 for i in range(5):
     print(dice.roll())
+
+print("hello")
